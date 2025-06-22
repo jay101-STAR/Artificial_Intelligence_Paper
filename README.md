@@ -24,7 +24,7 @@
 
 [清华镜像源](https://pypi.tuna.tsinghua.edu.cn/simple/)
 
-如果对安装过程有疑问，可以参考 B 站教程：
+如果对安装conda过程有疑问，可以参考 B 站教程：
 
 [PyTorch 深度学习快速入门教程](https://www.bilibili.com/video/BV1hE411t7RN/?spm_id_from=333.337.search-card.all.click&vd_source=a02c88013ffaa4f9661de7f810e6dfcc)
 
@@ -38,7 +38,7 @@
    - 如果有独立显卡，请注意确保 CUDA 和 cuDNN 的版本与 TensorFlow 兼容。具体版本匹配关系可以参考以下教程：
      [TensorFlow-gpu 保姆级安装教程](https://blog.csdn.net/weixin_43412762/article/details/129824339)
 
-2. **配置 GPU 环境**
+2. **配置 GPU 环境（无独立显卡可忽略）**
    - 根据上述教程安装 TensorFlow GPU 版本：
      ```bash
      pip install tensorflow-gpu==2.7.0 -i https://pypi.mirrors.ustc.edu.cn/simple
