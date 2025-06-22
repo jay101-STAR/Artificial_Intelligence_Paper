@@ -1,11 +1,11 @@
 # README
-
+#2022102127 陈浩佳 电子科学与技术 人工智能课程论文
 ## 项目概述
 
 本项目旨在实现基于 U-Net 算法的 CT 肿瘤图像分割。通过训练和测试 U-Net 模型，实现对 CT 图像中肿瘤区域的自动分割。
 
 ## 文件夹结构
-以下文件均包含在Unet文件中
+以下文件均包含在Unet文件夹中
 - **train**：存储患者的 CT 肿瘤影像文件夹。
 - **label**：存储与 train 文件夹对应的肿瘤掩膜。
 - **evaluation**：用于存放网络测试的结果。
@@ -44,13 +44,13 @@
      pip install tensorflow-gpu==2.7.0 -i https://pypi.mirrors.ustc.edu.cn/simple
      ```
 
-3. **解决依赖问题**
+4. **解决依赖问题**
    - 如果在安装过程中遇到依赖问题，可以使用以下命令安装指定版本的 protobuf：
      ```bash
      pip install protobuf==3.19.0 -i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
      ```
 
-4. **测试 TensorFlow 安装**
+5. **测试 TensorFlow 安装**
    - 进入 Python 环境，运行以下代码测试 TensorFlow 是否安装成功：
      ```python
      import tensorflow as tf
@@ -78,6 +78,6 @@
 
 ## 注意事项
 
-如果在运行过程中遇到问题，可以根据报错信息使用 Conda 或 pip 命令安装相关依赖包。若下载速度较慢，可以考虑开启 VPN。
+如果在运行过程中遇到问题，可以根据报错信息使用 Conda 或 pip 命令安装相关依赖包，若Numpy包报错，可以尝试进行降版本。若下载速度较慢，可以考虑开启 VPN。
 
 希望本项目对您的研究有所帮助！
