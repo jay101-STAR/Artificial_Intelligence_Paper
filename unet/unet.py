@@ -176,7 +176,7 @@ class U_Net():
         return x_train[:2700, :, :], x_label[:2700, :, :], x_train[2700:, :, :], x_label[2700:, :, :], train_files, label_files
 
     # 训练模型
-    def train(self, epochs=0, batch_size=32):
+    def train(self, epochs=101, batch_size=32):
         os.makedirs('./weights', exist_ok=True)  # 创建权重保存目录
         os.makedirs('./evaluation/preprocessing', exist_ok=True)  # 创建预处理结果保存目录
 
